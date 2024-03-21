@@ -5,21 +5,21 @@
 class Mi < Formula
   desc "CLI tool for compose notes to Misskey"
   homepage "https://github.com/canoypa/mi"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/canoypa/mi/releases/download/v0.1.0/mi_0.1.0_darwin_arm64.tar.gz"
-      sha256 "257605f270d535f00f7aa65fd79ce6d3e2d7e13731a1ee276991f3a33e1c2110"
+      url "https://github.com/canoypa/mi/releases/download/v0.1.1/mi_0.1.1_darwin_arm64.tar.gz"
+      sha256 "809f7f48588645dfb11e501164b2df84d17f0045ab426546886cc5202b330659"
 
       def install
         bin.install "mi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canoypa/mi/releases/download/v0.1.0/mi_0.1.0_darwin_amd64.tar.gz"
-      sha256 "adce901d348a84d5a12ba4857467120adaa69bc75709a3273fb30dbd52e9c38c"
+      url "https://github.com/canoypa/mi/releases/download/v0.1.1/mi_0.1.1_darwin_amd64.tar.gz"
+      sha256 "2aa09bbdc023c22bf156d6cd09fab79c25011f61c24c34fe07717fdeedbb0b75"
 
       def install
         bin.install "mi"
@@ -29,16 +29,16 @@ class Mi < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/canoypa/mi/releases/download/v0.1.0/mi_0.1.0_linux_arm64.tar.gz"
-      sha256 "33054546e6233b9992af1f42e4902695cb7ca7f5417d7af6ddf5eaa925300b38"
+      url "https://github.com/canoypa/mi/releases/download/v0.1.1/mi_0.1.1_linux_arm64.tar.gz"
+      sha256 "5dfb12a0d519efa11fe8897666540176cf9aced51f277d88b905f7d46daf0706"
 
       def install
         bin.install "mi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canoypa/mi/releases/download/v0.1.0/mi_0.1.0_linux_amd64.tar.gz"
-      sha256 "414311871a9a0e6446d6ffbc98e8931e251eb32720beb20150885dd4b1835d33"
+      url "https://github.com/canoypa/mi/releases/download/v0.1.1/mi_0.1.1_linux_amd64.tar.gz"
+      sha256 "d985c4eab3ddaebf80680b3f24908e1d87b95a5feadcd24f91caa94b40b98281"
 
       def install
         bin.install "mi"
