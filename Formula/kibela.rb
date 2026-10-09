@@ -1,25 +1,25 @@
 class Kibela < Formula
   desc "Read Kibela notes from the command line"
   homepage "https://github.com/canoypa/kibela-cli"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/canoypa/kibela-cli/releases/download/v0.2.0/kibela-aarch64-apple-darwin.tar.xz"
-      sha256 "b2a3d5e51f86333794931d01407916fab1658fd33d9ec52d201e4f0dc92d6ac8"
+      url "https://github.com/canoypa/kibela-cli/releases/download/v0.3.0/kibela-aarch64-apple-darwin.tar.xz"
+      sha256 "57dd3f38e67d80bae9960487d5dda2516aa71b359ecbc6ae373328d898b5d5bb"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canoypa/kibela-cli/releases/download/v0.2.0/kibela-x86_64-apple-darwin.tar.xz"
-      sha256 "4047e08e7437a7d06f18dcd7b34fa39c44f06750fb42acddd76e83804e9b5b5d"
+      url "https://github.com/canoypa/kibela-cli/releases/download/v0.3.0/kibela-x86_64-apple-darwin.tar.xz"
+      sha256 "20793cc82096c67beaaa9bf7f5762a5b90e5434f4dce7140da5971c370fa8185"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/canoypa/kibela-cli/releases/download/v0.2.0/kibela-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "f8e1783e7e44001d1eca0a311128a6603858eb37374a49f394ea177fa3b1ca9e"
+      url "https://github.com/canoypa/kibela-cli/releases/download/v0.3.0/kibela-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "4669a065ca9f52a0e3c59e8fdb6d4a84240ddf9a51f98c9842fb254476dbd7d4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/canoypa/kibela-cli/releases/download/v0.2.0/kibela-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "c74fb1dff38d17157c8f8083f0319916d877c765405baab20cf88671946ebc7c"
+      url "https://github.com/canoypa/kibela-cli/releases/download/v0.3.0/kibela-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "333de3fafb0ef0721a8795f15414e7825fc49704e10235853213e06f5ab506d2"
     end
   end
   license "MIT"
